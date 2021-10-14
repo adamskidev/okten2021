@@ -1,0 +1,45 @@
+body {
+    width: 1000px;
+    margin: auto;
+}
+
+h1 {
+    color: green;
+    text-align: center;
+}
+
+strong {
+    color: orangered;
+}
+
+img {
+    width: 1000px;
+}
+
+.text {
+    font-size: 20px;
+    text-align: justify;
+}
+
+h2 {
+    color: cornflowerblue;
+}
+
+ol {
+    font-size: 20px;
+    color: cornflowerblue;
+}
+
+span, ul {
+    font-size: 20px;
+    color: orange;
+}
+
+a {
+    text-decoration: none;
+    color: orange;
+}
+
+a:hover {
+    text-shadow: 1px 1px grey;
+}
