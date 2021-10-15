@@ -1,0 +1,47 @@
+body {
+    width: 1000px;
+    margin: auto;
+}
+
+.header {
+    border: 3px solid red;
+}
+
+h1 {
+    text-align: center;
+}
+
+img {
+    width: 100%;
+    margin-bottom: -4px;
+}
+
+.description {
+    font-size: 20px;
+    text-align: justify;
+}
+
+.steps {
+    width: 100%;
+    font-size: 20px;
+    text-align: justify;
+    display: flex;
+}
+
+.ingredients {
+    width: 30%;
+    border-left: 3px solid black;
+    padding-left: 10px;
+}
+
+.directions {
+    width: 70%;
+    border-left: 3px solid black;
+    padding-left: 10px;
+}
+
+.footer {
+    text-align: center;
+    border: 3px solid red;
+    margin-top: 30px;
+}
