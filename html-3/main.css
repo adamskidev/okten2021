@@ -5,6 +5,8 @@ body {
 
 .header {
     border: 3px solid red;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
 }
 
 h1 {
@@ -43,5 +45,7 @@ img {
 .footer {
     text-align: center;
     border: 3px solid red;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
     margin-top: 30px;
 }
