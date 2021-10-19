@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>4</title>
+    <style>
+        body {
+            height: 95vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: Arial, sans-serif;
+        }
+
+        .main {
+            height: 600px;
+            width: 800px;
+            color: grey;
+            flex-direction: column;
+            row-gap: 10px;
+        }
+
+        .flex {
+            display: flex;
+        }
+
+        .box {
+            background: #dadada;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-grow: 1;
+        }
+
+        .bcdefgh {
+            flex-grow: 2;
+            column-gap: 10px;
+        }
+
+        .bcdefg {
+            flex-grow: 3;
+            flex-direction: column;
+            row-gap: 10px;
+        }
+
+        .bcd {
+            flex-grow: 1;
+            column-gap: 10px;
+        }
+
+        .efg {
+            flex-grow: 1;
+            column-gap: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="main flex">
+    <div class="box">A</div>
+    <div class="bcdefgh flex">
+        <div class="bcdefg flex">
+            <div class="bcd flex">
+                <div class="box">B</div>
+                <div class="box">C</div>
+                <div class="box">D</div>
+            </div>
+            <div class="efg flex">
+                <div class="box">E</div>
+                <div class="box">F</div>
+                <div class="box">G</div>
+            </div>
+        </div>
+        <div class="box">H</div>
+    </div>
+</div>
+
+</body>
+</html>

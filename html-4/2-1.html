@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>2-1</title>
+    <style>
+        body {
+            height: 95vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .main {
+            width: 500px;
+        }
+
+        #header {
+            height: 100px;
+            border: solid 1px black;
+            background: lightgreen;
+            margin: 10px;
+        }
+
+        .page {
+            height: 350px;
+            display: flex;
+        }
+
+        #menu {
+            flex-grow: 1;
+            border: solid 1px black;
+            background: lightpink;
+            margin: 10px;
+        }
+
+        .content {
+            flex-grow: 2;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .post {
+            flex-grow: 1;
+            border: solid 1px black;
+            background: lightblue;
+            margin: 10px;
+        }
+
+        #footer {
+            height: 100px;
+            border: solid 1px black;
+            background: lightyellow;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="main">
+    <div id="header"></div>
+    <div class="page">
+        <div id="menu"></div>
+        <div class="content">
+            <div class="post"></div>
+            <div class="post"></div>
+        </div>
+    </div>
+    <div id="footer"></div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>2</title>
+    <style>
+        body {
+            height: 95vh;
+            font-family: Arial, sans-serif;
+        }
+
+        .fc {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .box {
+            width: 600px;
+            color: white;
+            text-align: center;
+        }
+
+        .header {
+            height: 80px;
+            background: blue;
+        }
+
+        .nav {
+            height: 50px;
+            background: darkblue;
+        }
+
+        .content {
+            height: 320px;
+            display: flex;
+        }
+
+        .main {
+
+            background: cornflowerblue;
+            flex-grow: 3;
+        }
+
+        .aside {
+            background: blueviolet;
+            flex-grow: 1;
+        }
+
+        .footer {
+            height: 50px;
+            background: deepskyblue;
+        }
+    </style>
+</head>
+<body class="fc">
+
+<div class="box">
+    <div class="header fc">Header</div>
+    <div class="nav fc">Nav</div>
+    <div class="content">
+        <div class="main fc">Main</div>
+        <div class="aside fc">Aside</div>
+    </div>
+    <div class="footer fc">Footer</div>
+</div>
+
+</body>
+</html>

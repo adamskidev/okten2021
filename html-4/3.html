@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>3</title>
+    <style>
+        body {
+            height: 95vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: Arial, sans-serif;
+        }
+
+        .main {
+            height: 600px;
+            width: 800px;
+            color: grey;
+            flex-direction: column;
+            row-gap: 10px;
+        }
+
+        .box {
+            background: #dadada;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .bcdef {
+            flex-grow: 2;
+            column-gap: 10px;
+        }
+
+        .bcde {
+            flex-grow: 3;
+            flex-direction: column;
+            row-gap: 10px;
+        }
+
+        .cde {
+            column-gap: 10px;
+        }
+
+        .flex {
+            display: flex;
+        }
+
+        .fg1 {
+            flex-grow: 1;
+        }
+    </style>
+</head>
+<body>
+
+<div class="main flex">
+    <div class="box fg1">A</div>
+    <div class="bcdef flex">
+        <div class="bcde flex">
+            <div class="box fg1">B</div>
+            <div class="cde fg1 flex">
+                <div class="box fg1">C</div>
+                <div class="box fg1">D</div>
+                <div class="box fg1">E</div>
+            </div>
+        </div>
+        <div class="box fg1">F</div>
+    </div>
+</div>
+
+</body>
+</html>
