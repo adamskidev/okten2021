@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>cw4-1</title>
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+
+        .fc {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .column {
+            flex-direction: column;
+        }
+
+        .pd20 {
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        .bg-light {
+            background: #CED8E1;
+        }
+
+        .bg-dark {
+            background: #102B3E;
+        }
+
+        .text-light {
+            color: #CED8E1;
+        }
+
+        .text-dark {
+            color: #102B3E;
+        }
+
+        .font18 {
+            font-size: 20px;
+        }
+
+        .font16 {
+            font-size: 16px;
+        }
+
+        .font14 {
+            font-size: 14px;
+        }
+
+        .box {
+            height: 100px;
+            width: 100px;
+        }
+
+        .br10 {
+            border-radius: 10%;
+        }
+
+        .br50 {
+            border-radius: 50%;
+        }
+
+        .main {
+            width: 700px;
+            height: 550px;
+        }
+
+        .top-content {
+            width: 80%;
+            margin: 20px auto;
+            border-radius: 30px;
+        }
+
+        .content {
+            display: flex;
+            column-gap: 20px;
+        }
+
+        .main-content {
+            width: 100%;
+            column-gap: 40px;
+        }
+
+        .border {
+            border: solid #3AC6EA;
+        }
+    </style>
+</head>
+<body class="fc">
+
+<div class="main bg-light">
+    <div class="top-content fc column border pd20">
+        <h1 class="text-dark font18">HEADER ONE</h1>
+        <div class="content">
+            <div class="content-box fc column">
+                <div class="box bg-dark br10"></div>
+                <h2 class="text-dark font14">HEADER TWO</h2>
+            </div>
+            <div class="content-box fc column">
+                <div class="box bg-dark br10"></div>
+                <h2 class="text-dark font14">HEADER TWO</h2>
+            </div>
+            <div class="content-box fc column">
+                <div class="box bg-dark br10"></div>
+                <h2 class="text-dark font14">HEADER TWO</h2>
+            </div>
+            <div class="content-box fc column">
+                <div class="box bg-dark br10"></div>
+                <h2 class="text-dark font14">HEADER TWO</h2>
+            </div>
+        </div>
+    </div>
+    <div class="main-content bg-dark fc pd20">
+        <div class="content-box fc column">
+            <div class="box bg-light br50"></div>
+            <p class="text-light font16">
+                PRODUCT NAME <br>
+                <span class="font14">SOME TEXT HERE</span>
+            </p>
+        </div>
+        <div class="content-box fc column border pd20">
+            <div class="box bg-light br50"></div>
+            <p class="text-light font16">
+                PRODUCT NAME <br>
+                <span class="font14">SOME TEXT HERE</span>
+            </p>
+        </div>
+        <div class="content-box fc column">
+            <div class="box bg-light br50"></div>
+            <p class="text-light font16">
+                PRODUCT NAME <br>
+                <span class="font14">SOME TEXT HERE</span>
+            </p>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

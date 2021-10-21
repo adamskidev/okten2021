@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Annotating Wireframes</title>
+    <style>
+        .border {
+            border: solid black;
+        }
+
+        .border-right {
+            border-right: solid black;
+        }
+
+        .border-bottom {
+            border-bottom: solid black;
+        }
+
+        .bg-s {
+            background: silver;
+        }
+
+        .pd10 {
+            padding: 10px;
+        }
+
+        .flex {
+            display: flex;
+        }
+
+        .column {
+            flex-direction: column;
+        }
+
+        .cg10 {
+            column-gap: 10px;
+        }
+
+        .rg10 {
+            row-gap: 10px;
+        }
+
+        .h30 {
+            height: 30px;
+        }
+
+        .h100 {
+            height: 100px;
+        }
+
+        .one {
+            justify-content: space-between;
+            border-bottom: none;
+        }
+
+        .one__box {
+            width: 20%;
+        }
+
+        .two {
+            width: 20%;
+        }
+
+        .three-seven {
+            width: 80%;
+        }
+
+        .three__box {
+            height: 250px;
+        }
+
+        .four__box {
+            flex-grow: 1;
+        }
+
+        .five {
+            width: 75%;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .five__box {
+            width: 49%;
+        }
+
+        .five__button {
+            height: 20px;
+            width: 10%;
+        }
+
+        .six {
+            width: 25%;
+        }
+
+        .six__box {
+            height: 60px;
+        }
+
+        .seven {
+            align-items: center;
+        }
+
+        .seven__box-1 {
+            width: 100%;
+        }
+
+        .seven__box-2 {
+            width: 20%;
+        }
+    </style>
+</head>
+<body>
+
+<div class="one border pd10 flex">
+    <div class="one__box bg-s h30"></div>
+    <div class="one__box bg-s h30"></div>
+</div>
+<div class="content border flex">
+    <div class="two border-right pd10 flex column rg10">
+        <div class="two__box bg-s h30"></div>
+        <div class="two__box bg-s h30"></div>
+        <div class="two__box bg-s h30"></div>
+        <div class="two__box bg-s h30"></div>
+        <div class="two__box bg-s h30"></div>
+        <div class="two__box bg-s h30"></div>
+    </div>
+    <div class="three-seven">
+        <div class="three border-bottom pd10">
+            <div class="three__box bg-s"></div>
+        </div>
+        <div class="four border-bottom pd10 flex cg10">
+            <div class="four__box bg-s h100"></div>
+            <div class="four__box bg-s h100"></div>
+            <div class="four__box bg-s h100"></div>
+            <div class="four__box bg-s h100"></div>
+        </div>
+        <div class="five-six flex">
+            <div class="five border-right border-bottom pd10 flex cg10 rg10">
+                <div class="five__box bg-s h100"></div>
+                <div class="five__box bg-s h100"></div>
+                <div class="five__box bg-s h100"></div>
+                <div class="five__box bg-s h100"></div>
+                <div class="five__box bg-s h100"></div>
+                <div class="five__box bg-s h100"></div>
+                <div class="five__box bg-s h100"></div>
+                <div class="five__box bg-s h100"></div>
+                <div class="five__box bg-s h100"></div>
+                <div class="five__box bg-s h100"></div>
+                <div class="five__box bg-s h100"></div>
+                <div class="five__box bg-s h100"></div>
+                <div class="five__button bg-s"></div>
+            </div>
+            <div class="six border-bottom pd10 flex column rg10">
+                <div class="six__box bg-s"></div>
+                <div class="six__box bg-s"></div>
+                <div class="six__box bg-s"></div>
+                <div class="six__box bg-s"></div>
+            </div>
+        </div>
+        <div class="seven pd10 flex column rg10">
+            <div class="seven__box-1 bg-s h30"></div>
+            <div class="seven__box-2 bg-s h30"></div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
