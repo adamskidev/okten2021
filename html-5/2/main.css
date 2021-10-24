@@ -1,0 +1,192 @@
+body {
+    max-width: 1200px;
+    margin: auto;
+    font-family: Arial, sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+.bg-silver {
+    background: #CED8E1;
+}
+
+.bg-viol {
+    background: #6964E2;
+}
+
+.bg-blue {
+    background: #102B3E;
+}
+
+.color-viol {
+    color: #6964E2;
+}
+
+.color-blue {
+    color: #102B3E;
+}
+
+.flex {
+    display: flex;
+}
+
+.flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-sb {
+    display: flex;
+    justify-content: space-between;
+}
+
+.column {
+    flex-direction: column;
+}
+
+.wrap {
+    flex-wrap: wrap;
+}
+
+.rg30 {
+    row-gap: 30px;
+}
+
+.cg20 {
+    column-gap: 20px;
+}
+
+.br10 {
+    border-radius: 10px;
+}
+
+.fw900 {
+    font-weight: 900;
+}
+
+.header {
+    padding: 10px 80px 20px;
+    box-sizing: border-box;
+}
+
+.lang {
+    justify-content: flex-end;
+    column-gap: 10px;
+}
+
+.nav {
+    align-items: flex-end;
+}
+
+.logo {
+    height: 50px;
+    width: 150px;
+}
+
+.nav-items {
+    width: 50%;
+    font-size: 18px;
+}
+
+.top {
+    padding: 80px;
+    box-sizing: border-box;
+}
+
+.about {
+    max-width: 400px;
+}
+
+h1, h2, h3 {
+    margin: 0;
+}
+
+button {
+    height: 30px;
+    width: 150px;
+    border-radius: 30px;
+}
+
+.main {
+    padding: 60px 80px;
+    box-sizing: border-box;
+    row-gap: 100px;
+}
+
+.main-content {
+    column-gap: 80px;
+}
+
+.left, .right {
+    width: 50%;
+}
+
+.gallery-image {
+    height: 250px;
+}
+
+.arrow {
+    font-size: 40px;
+}
+
+.small-image,
+.icon {
+    height: 40px;
+    width: 40px;
+}
+
+.post-image {
+    min-height: 150px;
+    min-width: 150px;
+}
+
+.content {
+    width: 300px;
+}
+
+.pictures {
+    width: 100%;
+    row-gap: 20px;
+}
+
+.picture1 {
+    height: 250px;
+    width: 70%;
+}
+
+.picture2 {
+    height: 250px;
+    width: 30%;
+}
+
+.cards {
+    width: 100%;
+    justify-content: space-around;
+}
+
+.photo {
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+.footer {
+    padding: 40px 80px 20px;
+    box-sizing: border-box;
+}
+
+.social {
+    width: 40%;
+}
+
+.contacts {
+    width: 60%;
+}
+
+.address {
+    width: 30%;
+}

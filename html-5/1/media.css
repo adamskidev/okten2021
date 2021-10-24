@@ -1,0 +1,47 @@
+@media screen and (max-width: 480px) {
+    .header {
+        padding: 20px;
+    }
+    .top {
+        padding: 20px 20px 80px;
+    }
+    .awards {
+        top: 190px;
+    }
+    .award {
+        margin: 10px;
+    }
+    .award,
+    .product-image {
+        height: 100px;
+        width: 100px;
+    }
+    .main {
+        padding: 80px 20px 20px;
+    }
+    h2 {
+        margin-top: 50px;
+    }
+    h3 {
+        font-size: 16px;
+    }
+    .events {
+        width: 100%;
+    }
+    .pic {
+        height: 80px;
+        width: 100px;
+    }
+    .photo {
+        margin-right: 20px;
+    }
+    .quote {
+        width: 60%;
+    }
+    .footer {
+        padding: 30px 20px 10px;
+    }
+    .hide {
+        display: none;
+    }
+}
