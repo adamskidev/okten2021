@@ -1,0 +1,220 @@
+<!doctype html>
+<html lang="en" class="bg-gray">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="media.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Tinos:wght@400;700&family=Cookie&display=swap"
+          rel="stylesheet">
+    <title>Ресторан</title>
+</head>
+<body>
+
+<header>
+    <div class="header-top flex-sb white">
+        <img class="logo" src="img/LOGO.svg" alt="Logo">
+        <div class="nav flex">
+            <div class="nav-items flex-center font14 bold">
+                <a href="#">ГЛАВНАЯ</a>
+                <a href="#">МЕНЮ</a>
+                <a href="#">О НАС</a>
+                <a href="#">БРОНЬ</a>
+                <a href="#"><img class="cart-icon" src="img/shopping-cart-solid.svg" alt="Shopping cart"></a>
+            </div>
+            <div class="contacts flex">
+                <div class="contact flex column">
+                    <div class="phone flex">
+                        <img class="phone-icon" src="img/phone.png" alt="Phone">
+                        <span class="font18 bold">+999-888-76-54</span>
+                    </div>
+                    <p class="font14">Свяжитесь с нами для бронирования</p>
+                </div>
+                <button class="order-btn white bg-dark-orange font14 bold">ЗАКАЗ СТОЛИКА</button>
+            </div>
+        </div>
+        <div class="burger-menu flex column">
+            <div class="bg-dark-orange"></div>
+            <div class="bg-dark-orange"></div>
+            <div class="bg-dark-orange"></div>
+        </div>
+    </div>
+    <div class="header-main">
+        <div class="title flex-center column">
+            <h3 class="orange font-tinos">Добро пожаловать в</h3>
+            <h1 class="orange font-tinos">Наш ресторан</h1>
+            <span class="flex-center white font18">ДОМ ЛУЧШЕЙ ЕДЫ</span>
+            <button class="menu-btn white bg-dark-orange font14 bold">VIEW MENU</button>
+        </div>
+        <div class="title-mobile flex-center column">
+            <h3 class="orange font-tinos">Добро пожаловать</h3>
+            <h1 class="orange font-tinos">В наш ресторан</h1>
+            <span class="flex-center white font18">ДОМ ЛУЧШЕЙ ЕДЫ</span>
+            <button class="menu-btn white bg-dark-orange font14 bold">МЕНЮ</button>
+        </div>
+        <div class="header-blocks flex cg30 font26 text-center absolute">
+            <div class="block flex column bg-white font-tinos">
+                <img class="block-image" src="img/mask.png" alt="">
+                <h3 class="font26">Магическая <span class="light-orange">Атмосфера</span></h3>
+                <p>В нашем заведении царит магическая атмосфера наполненная вкусными ароматами</p>
+            </div>
+            <div class="block flex column bg-white font-tinos">
+                <img class="block-image" src="img/mask.png" alt="">
+                <h3 class="font26">Лучшее качество <span class="light-orange">Еды</span></h3>
+                <p>Качество нашей
+                    <br> Еды - отменное!</p>
+            </div>
+            <div class="block flex column bg-white font-tinos">
+                <img class="block-image" src="img/mask.png" alt="">
+                <h3 class="font26">Недорогая <span class="light-orange">Еда</span></h3>
+                <p>Стоимость нашей Еды
+                    <br> зависит только от ее количества. Качество
+                    <br> всегда на высоте!</p>
+            </div>
+        </div>
+    </div>
+</header>
+
+<section class="about flex-sb">
+    <div class="story text-center">
+        <h2>Наша <span class="orange">История</span></h2>
+        <p>Как и у любого другого самобытного места, у нас есть своя, особая история. Идея ресторана пришла основателям
+            неожиданно. Во время прогулки по лесу создатель нашего ресторана застрял в сотнях километров от ближайшего
+            населенного пункта. Вдали от цивилизации и связи им пришлось навремя обустровать себе нехитрый быт, добывать
+            и готовить себе еду.</p>
+        <div class="stats flex-sb font20">
+            <div class="stats-item flex column">
+                <span class="font40 light-orange">93</span>
+                Напитки
+            </div>
+            <div class="stats-item flex column">
+                <span class="font40 light-orange">206</span>
+                Еда
+            </div>
+            <div class="stats-item flex column">
+                <span class="font40 light-orange">71</span>
+                Закуски
+            </div>
+        </div>
+    </div>
+    <img src="img/images.png" alt="Images">
+</section>
+
+<section class="promo flex-sb white">
+    <div class="promo-text">
+        <h3 class="orange font-tinos">Отпразднуйте <br> в одном из <br> самых лучших ресторанов.</h3>
+        <p>Только в этом месяце бизнес-ланч от 250 ₽</p>
+    </div>
+    <button class="order-btn white bg-dark-orange font14 bold">ЗАКАЗ СТОЛИКА</button>
+</section>
+
+<section class="menu-1">
+    <h2>Наши <span class="orange">Блюда</span></h2>
+    <div class="menu-1-block flex cg30">
+        <img src="img/pizza.png" alt="Pizza">
+        <ul class="menu-1-list flex column rg30 font26 font-tinos">
+            <li class="flex-sb">
+                <img src="img/hamburger.png" alt="Hamburger">
+                <p><span>Гамбургер мини <span>----------------------</span></span> 220 ₽</p>
+            </li>
+            <li class="flex-sb">
+                <img src="img/hamburger.png" alt="Hamburger">
+                <p><span>Гамбургер мини <span>----------------------</span></span> 220 ₽</p>
+            </li>
+            <li class="flex-sb">
+                <img src="img/hamburger.png" alt="Hamburger">
+                <p><span>Гамбургер мини <span>----------------------</span></span> 220 ₽</p>
+            </li>
+        </ul>
+    </div>
+</section>
+
+<section class="menu-2">
+    <h2 class="white">Наше меню</h2>
+    <ul class="menu-2-list flex-sb">
+        <li class="flex column bg-white text-center relative">
+            <div class="recommend flex-center bg-orange absolute">RECOMMENDED</div>
+            <div class="menu-2-image relative">
+                <img class="border50" src="img/burger.png" alt="Burger">
+                <div class="price flex-center white bg-orange font30 border50 absolute">420</div>
+            </div>
+            <p class="font26 font-tinos">Гамбургер макси</p>
+            <span>Максимально толстый <br> слой мяса</span>
+            <button class="white bg-orange bold">ЗАКАЗАТЬ</button>
+        </li>
+        <li class="flex column bg-white text-center relative hide">
+            <div class="menu-2-image relative">
+                <img class="border50" src="img/burger.png" alt="Burger">
+                <div class="price flex-center white bg-orange font30 border50 absolute">420</div>
+            </div>
+            <p class="font26 font-tinos">Гамбургер макси</p>
+            <span>Максимально толстый <br> слой мяса</span>
+            <button class="white bg-orange bold">ЗАКАЗАТЬ</button>
+        </li>
+        <li class="flex column bg-white text-center relative hide">
+            <div class="menu-2-image relative">
+                <img class="border50" src="img/burger.png" alt="Burger">
+                <div class="price flex-center white bg-orange font30 border50 absolute">420</div>
+            </div>
+            <p class="font26 font-tinos">Гамбургер макси</p>
+            <span>Максимально толстый <br> слой мяса</span>
+            <button class="white bg-orange bold">ЗАКАЗАТЬ</button>
+        </li>
+    </ul>
+</section>
+
+<section class="review flex-center text-center column bg-gray">
+    <div class="review-text font20">
+        <p>Я надолго запомню мой День рождения, проведённый в <br> этом ресторане! Кусочек <br> родной Армении!!!
+            Отдельное спасибо за комплепент в виде фруктовой тарелки. Будем рекомендовать этот <br> ресторан своим друзьям и
+            родственникам также за <br> рубежом, путешествующих в Санкт-Петербург!!!</p>
+    </div>
+    <div class="review-author flex-center column font20">
+        <img class="border50" src="img/customer.png" alt="Customer photo">
+        <p>Посетитель</p>
+        <span>Николай</span>
+    </div>
+    <div class="dots flex-center">
+        <div class="dot-silver border50"></div>
+        <div class="dot-silver border50"></div>
+        <div class="dot-orange border50"></div>
+    </div>
+</section>
+
+<section class="gallery flex-center column rg30 relative">
+    <h2>Галерея <span class="orange">Блюд</span></h2>
+    <div class="rectangle-left absolute hide"></div>
+    <div class="rectangle-right absolute hide"></div>
+    <div class="gallery-1 flex cg30">
+        <img src="img/gallery-table.png" alt="Table">
+        <img src="img/gallery-coffee.png" alt="Coffee">
+        <img src="img/gallery-goulash.png" alt="Goulash">
+    </div>
+    <div class="gallery-2 flex cg30">
+        <img src="img/gallery-coffee.png" alt="Coffee">
+        <img src="img/gallery-goulash.png" alt="Goulash">
+        <img src="img/gallery-table.png" alt="Table">
+    </div>
+</section>
+
+<section class="cooks">
+    <h2>Наши <span class="orange">Повара</span></h2>
+    <div class="cooks-images flex-sb">
+        <img src="img/cook-1.png" alt="Cook 1">
+        <img src="img/cook-2.png" alt="Cook 2">
+        <img src="img/cook-3.png" alt="Cook 3">
+    </div>
+    <div class="dots flex-center hide">
+        <div class="dot-orange border50"></div>
+        <div class="dot-silver border50"></div>
+    </div>
+</section>
+
+<footer></footer>
+
+</body>
+</html>
