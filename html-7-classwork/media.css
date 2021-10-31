@@ -1,0 +1,82 @@
+@media screen and (max-width: 575px) {
+    header, section, footer {
+        padding: 0;
+    }
+
+    h1 {
+        font-size: 34px;
+        text-align: center;
+        margin-top: 50px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    h3 {
+        font-size: 18px;
+        text-align: center;
+    }
+
+    h1::after {
+        content: "";
+        height: 7px;
+        width: 250px;
+        background-color: #EDEFF3;
+        margin-top: 30px;
+    }
+
+    .description::before, .description::after {
+        display: none;
+    }
+
+    .block-2 img {
+        width: 100vw;
+    }
+
+    .standards {
+        padding: 40px 12px 20px;
+    }
+
+    .block-3 {
+        padding: 0;
+        margin-top: 340px;
+    }
+
+    .block-3 img {
+        position: absolute;
+        right: 0;
+        top: -500px;
+        z-index: -1;
+        height: 640px;
+    }
+
+    .block-4 {
+        padding: 40px 15px;
+    }
+
+    .block-4-1-item,
+    .block-4-4-item {
+        width: 100%;
+    }
+
+    .block-4-2 {
+        padding: 40px 0;
+    }
+
+    .block-4-2 li {
+        padding-left: 10px;
+    }
+
+    footer {
+        padding: 32px 24px;
+    }
+
+    .contact-text {
+        padding-right: 0;
+    }
+
+    .contacts p {
+        margin-bottom: 0;
+    }
+}
