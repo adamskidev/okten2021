@@ -622,6 +622,38 @@ nav select {
     margin: 15px 0 20px;
 }
 
+.fixed-navbar {
+    display: none;
+    height: 60px;
+    width: 100%;
+    background-color: #ffffff;
+    color: #0F2438;
+    text-align: center;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    justify-content: space-around;
+    position: fixed;
+    bottom: 0;
+    z-index: 2;
+}
+
+.counter-fav, .counter-goods {
+    height: 12px;
+    width: 12px;
+    border-radius: 50%;
+    background-color: #005BB9;
+    font-size: 8px;
+}
+
+.counter-fav {
+    top: -5px;
+    right: 7px;
+}
+
+.counter-goods {
+    top: -5px;
+    right: 0;
+}
+
 footer {
     background-color: #0C1A2A;
 }

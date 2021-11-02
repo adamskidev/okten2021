@@ -286,9 +286,13 @@
         font-size: 12px;
     }
 
+    .fixed-navbar {
+        display: flex;
+    }
+
     .footer-content {
         flex-direction: column;
-        padding: 20px 15px 60px;
+        padding: 20px 15px 120px;
     }
 
     .contact-links {
@@ -305,5 +309,9 @@
 
     .socials {
         justify-content: flex-start;
+    }
+
+    .copyright {
+        bottom: 80px;
     }
 }
