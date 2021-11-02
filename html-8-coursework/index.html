@@ -1,0 +1,645 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="media.css">
+    <title>Document</title>
+</head>
+<body>
+
+
+<header>
+    <div class="header-top flex-align-center">
+        <nav class="mx-auto flex-sb font14 font-m12 white relative">
+            <div class="nav-left flex-align-center cg-30">
+                <div class="location flex-align-center">
+                    <img class="location-icon" src="img/1-header-top-1-placeholder.png" alt="Location">
+                    <p>Ваш город: <a href="#">Москва</a></p>
+                </div>
+                <div class="location-modal absolute hide">
+                    <div class="modal-heading flex-sb">
+                        <span class="font20 bold">Выберите свой город</span>
+                        <img class="h100" src="img/1-header-top-2-close.png" alt="Close">
+                    </div>
+                    <input type="text" placeholder="Ваш город">
+                    <ul class="font14 medium">
+                        <li class="selected">Москва</li>
+                        <li>Санкт-Петербург</li>
+                        <li>Краснодар</li>
+                        <li>Екатеринбург</li>
+                        <li>Ростов-на-Дону</li>
+                        <li>Самара</li>
+                    </ul>
+                </div>
+                <select name="information" id="information" class="info-dropdown hide">
+                    <option value="">Информация</option>
+                    <option value="" disabled>link-1</option>
+                    <option value="" disabled>link-2</option>
+                    <option value="" disabled>link-3</option>
+                    <option value="" disabled>link-4</option>
+                </select>
+                <select name="cooperation" id="cooperation" class="coop-dropdown hide">
+                    <option value="">Сотрудничество</option>
+                    <option value="" disabled>link-1</option>
+                    <option value="" disabled>link-2</option>
+                    <option value="" disabled>link-3</option>
+                    <option value="" disabled>link-4</option>
+                </select>
+            </div>
+
+            <div class="nav-right flex-align-center cg-30 hide">
+                <a href="#">Доставка</a>
+                <a href="#">Оплата</a>
+                <a href="#">Гарантия</a>
+                <a href="#">Новости</a>
+                <a href="#">Журнал</a>
+                <a href="#">О магазине</a>
+                <a href="#">Контакты</a>
+            </div>
+            <div class="nav-right-media">
+                <select name="more" id="more">
+                    <option value="">Еще</option>
+                    <option value="" disabled>Доставка</option>
+                    <option value="" disabled>Оплата</option>
+                    <option value="" disabled>Новости</option>
+                    <option value="" disabled>Журнал</option>
+                    <option value="" disabled>О магазине</option>
+                    <option value="" disabled>Контакты</option>
+                </select>
+            </div>
+        </nav>
+    </div>
+
+    <div class="header-main mx-auto">
+        <div class="header-main-contacts flex-align-center wrap">
+            <div class="header-logo flex-align-center cg-10">
+                <img src="img/2-header-main-1-logo.png" alt="Logo">
+                <div class="company-name">
+                    <h1 class="m-0 font24 font-m14">AVT-ZAP</h1>
+                    <p class="font12 font-m8 medium m-0">Интернет-магазин запчастей для АКПП</p>
+                </div>
+            </div>
+
+            <div class="header-time font14 medium flex-align-center cg-10 hide">
+                <img src="img/2-header-main-2-time.png" alt="Time">
+                <p>Мы работаем: будни - 9:00-21:00
+                    <br> сб. - 10:00-15:00</p>
+            </div>
+
+            <div class="header-address flex-align-center cg-10 font14 medium hide">
+                <img src="img/2-header-main-3-placeholder.png" alt="Location">
+                <p>Невский пр-т, д. 45</p>
+            </div>
+
+            <div class="header-phones flex">
+                <button class="header-whatsapp cg-10 font12 font-m10">
+                    <img src="img/2-header-main-3-whatsapp.png" alt="Whatsapp">
+                    <span>Напишите нам в WhatsApp</span>
+                </button>
+
+                <div class="header-phone medium">
+                    <p class="font20 font-m14 m-0">+7 383 291 92 86</p>
+                    <a class="font12 font-m10" href="#">форма обратной связи</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="header-main-buttons flex-align-center wrap">
+            <div class="header-main-buttons-left flex-align-center cg-30">
+                <button class="catalog-btn cg-10">
+                    <img src="img/2-header-main-4-menu.png" alt="Menu">
+                    <span class="font18 bold white hide">Каталог</span>
+                </button>
+
+                <div class="search-form flex">
+                    <input class="input-search" type="search" placeholder="Поиск по наименованию или артикулу">
+                    <button class="search-btn">
+                        <span class="font14 medium white hide">Найти</span>
+                        <img src="img/2-header-main-7-search.png" alt="">
+                    </button>
+                </div>
+            </div>
+
+            <div class="header-main-buttons-right flex hide">
+                <a class="user flex-align-center" href="#">
+                    <img src="img/2-header-main-5-user.png" alt="User">
+                    <span class="font14 medium">Войти</span>
+                </a>
+                <a class="favorites flex-align-center" href="#">
+                    <img src="img/2-header-main-6-heart.png" alt="Favorite">
+                    <span class="font14 medium">Избранное</span>
+                </a>
+                <a class="cart flex-align-center" href="#">
+                    <img src="img/2-header-main-7-cart.png" alt="Cart">
+                    <span class="font14 medium">В корзине <br> нет товаров</span>
+                </a>
+            </div>
+        </div>
+    </div>
+</header>
+
+<section class="promo mx-auto flex-sb">
+    <div class="banner flex-center cg-30 relative">
+        <button class="slider-btn-left absolute hide">
+            <img src="img/3-banner-3-btn-prev.png" alt="Previous">
+        </button>
+
+        <div class="banner-content">
+            <p class="banner-product-name font36 font-m16 medium">Сцепление в сборе</p>
+            <a class="banner-product-brand font20 font-m16" href="#">0AMCLUTCH</a>
+            <div class="banner-product-price flex">
+                <p>14 499,99 ₽</p>
+                <span class="font22 font-m14">18 550,99 ₽</span>
+            </div>
+            <button class="cart-btn cg-10">
+                <img src="img/3-banner-5-cart.png" alt="Cart">
+                <span class="medium white font-m12">В корзину</span>
+            </button>
+        </div>
+
+        <img src="img/3-banner-2-product.png" alt="">
+
+        <button class="slider-btn-right absolute hide">
+            <img src="img/3-banner-4-btn-next.png" alt="Next">
+        </button>
+
+        <div class="slider-dots flex cg-20 absolute">
+            <div class="dot-black"></div>
+            <div class="dot-white"></div>
+            <div class="dot-white"></div>
+        </div>
+    </div>
+
+    <div class="promo-boxes flex-sb">
+        <div class="promo-box relative">
+            <p class="font14 font-m12 medium">Акция</p>
+            <div class="promo-product flex">
+                <div class="promo-product-image">
+                    <img src="img/3-promo-6-product.png" alt="">
+                </div>
+                <div class="promo-product-description">
+                    <p class="medium font-m12">Обгонная муфта гидротрансформатор</p>
+                    <span class="font12 font-m10">BW-SP-2 SONNAX</span>
+                    <div class="promo-product-price flex">
+                        <p class="font20 bold">4 430₽</p>
+                        <span class="font-m12">5 430₽</span>
+                    </div>
+                </div>
+            </div>
+            <button class="mini-cart-btn absolute">
+                <img src="img/3-banner-5-cart.png" alt="Cart">
+            </button>
+        </div>
+
+        <div class="promo-box relative">
+            <p class="font14 font-m12 medium">Акция</p>
+            <div class="promo-product flex">
+                <div class="promo-product-image">
+                    <img src="img/3-promo-7-product.png" alt="">
+                </div>
+                <div class="promo-product-description">
+                    <p class="medium font-m12">Комплект фрикционных дисков</p>
+                    <span class="font12 font-m10">BW-SP-2 SONNAX</span>
+                    <div class="promo-product-price flex">
+                        <p class="font20 bold">4 430₽</p>
+                        <span class="font-m12">5 430₽</span>
+                    </div>
+                </div>
+            </div>
+            <button class="mini-cart-btn absolute">
+                <img src="img/3-banner-5-cart.png" alt="Cart">
+            </button>
+        </div>
+    </div>
+</section>
+
+<section class="product-types mx-auto flex-sb relative">
+    <button class="slider-btn-left absolute hide">
+        <img src="img/3-banner-3-btn-prev.png" alt="Previous">
+    </button>
+
+    <div class="product-type-box flex-sb">
+        <div class="product-type-description">
+            <h2 class="font24 font-m16 medium m-0">Масла</h2>
+            <p class="font14 font-m10 medium">Трансмиссионное масло; <br> присалка в масло акпп</p>
+            <button class="link-btn white">Перейти</button>
+        </div>
+        <img class="h100" src="img/4-type-1-product.png" alt="">
+    </div>
+
+    <div class="product-type-box flex-sb">
+        <div class="product-type-description">
+            <h2 class="font24 font-m16 medium m-0">Фильтры</h2>
+            <p class="font14 font-m10 medium">Масляный фильтр; <br> фильтр воздушный</p>
+            <button class="link-btn white">Перейти</button>
+        </div>
+        <img class="h100" src="img/4-type-2-product.png" alt="">
+    </div>
+
+    <div class="product-type-box flex-sb">
+        <div class="product-type-description">
+            <h2 class="font24 font-m16 medium m-0">Радиаторы</h2>
+            <p class="font14 font-m10 medium">Дополнительные <br> радиаторы</p>
+            <button class="link-btn white">Перейти</button>
+        </div>
+        <img class="h100" src="img/4-type-3-product.png" alt="">
+    </div>
+
+    <button class="slider-btn-right absolute hide">
+        <img src="img/3-banner-4-btn-next.png" alt="Next">
+    </button>
+</section>
+
+<section class="products mx-auto">
+    <div class="sort-buttons flex cg-20">
+        <button class="recommended-btn font20 font-m14 medium white">Подборки товаров</button>
+        <button class="specials-btn font20 font-m14 medium">Акции</button>
+        <button class="now-buying-btn font20 font-m14 medium">Сейчас покупают</button>
+    </div>
+    <ul class="product-list flex-sb wrap">
+        <li class="product-item flex-sb">
+            <div class="product-item-description">
+                <img src="img/5-product-list-1-product.png" alt="">
+                <div class="review font14 font-m10 flex cg-10">
+                    <div class="rating flex-align-center medium">
+                        <img src="img/5-product-list-5-star.png" alt="">
+                        <span>4.5</span>
+                    </div>
+                    <a href="#">10 отзывов</a>
+                </div>
+                <p class="product-item-name font20 font-m12 medium">Intermediate accumelator sleeve</p>
+            </div>
+            <div class="product-item-prices">
+                <div class="product-item-no-price flex font14 font-m12">
+                    <p>ЦЕНА</p>
+                    <a href="#">по запросу</a>
+                </div>
+                <div class="product-item-buttons flex-align-center cg-20">
+                    <button class="cart-btn cg-10">
+                        <img src="img/3-banner-5-cart.png" alt="Cart">
+                        <span class="font-m12 medium white">В корзину</span>
+                    </button>
+                    <a href="#"><img src="img/5-product-list-6-heart.png" alt="Favorite"></a>
+                    <a class="hide" href="#"><img src="img/5-product-list-7-rating.png" alt="Rating"></a>
+                </div>
+            </div>
+        </li>
+        <li class="product-item flex-sb relative">
+            <div class="product-item-discount flex-center absolute font12 font-m10 medium white">
+                <span>-40%</span>
+            </div>
+            <div class="product-item-description">
+                <img src="img/5-product-list-2-product.png" alt="">
+                <div class="review font14 font-m10 flex cg-10">
+                    <div class="rating flex-align-center medium">
+                        <img src="img/5-product-list-5-star.png" alt="">
+                        <span>4.5</span>
+                    </div>
+                    <a class="reviews" href="#">10 отзывов</a>
+                </div>
+                <p class="product-item-name font20 font-m12 medium">Комплект фрикционных дисков</p>
+            </div>
+            <div class="product-item-prices">
+                <div class="product-item-price flex">
+                    <p class="font22 font-m14 bold">4 430₽</p>
+                    <span class="font-m10">5 430₽</span>
+                </div>
+                <div class="product-item-buttons flex-align-center cg-20">
+                    <button class="cart-btn cg-10">
+                        <img src="img/3-banner-5-cart.png" alt="Cart">
+                        <span class="font-m12 medium white">В корзину</span>
+                    </button>
+                    <a href="#"><img src="img/5-product-list-6-heart.png" alt="Favorite"></a>
+                    <a class="hide" href="#"><img src="img/5-product-list-7-rating.png" alt="Rating"></a>
+                </div>
+            </div>
+        </li>
+        <li class="product-item flex-sb">
+            <div class="product-item-description">
+                <img src="img/5-product-list-3-product.png" alt="">
+                <div class="review font14 font-m10 flex cg-10">
+                    <div class="rating flex-align-center medium">
+                        <img src="img/5-product-list-5-star.png" alt="">
+                        <span>4.5</span>
+                    </div>
+                    <a class="reviews" href="#">10 отзывов</a>
+                </div>
+                <p class="product-item-name font20 font-m12 medium">Intermediate accumelator sleeve</p>
+            </div>
+            <div class="product-item-prices">
+                <div class="product-item-no-price flex font14 font-m12">
+                    <p>ЦЕНА</p>
+                    <a href="#">по запросу</a>
+                </div>
+                <div class="product-item-buttons flex-align-center cg-20">
+                    <button class="cart-btn cg-10">
+                        <img src="img/3-banner-5-cart.png" alt="Cart">
+                        <span class="font-m12 medium white">В корзину</span>
+                    </button>
+                    <a href="#"><img src="img/5-product-list-6-heart.png" alt="Favorite"></a>
+                    <a class="hide" href="#"><img src="img/5-product-list-7-rating.png" alt="Rating"></a>
+                </div>
+            </div>
+        </li>
+        <li class="product-item flex-sb">
+            <div class="product-item-description">
+                <img src="img/5-product-list-4-product.png" alt="">
+                <div class="review font14 font-m10 flex cg-10">
+                    <div class="rating flex-align- center medium">
+                        <img src="img/5-product-list-5-star.png" alt="">
+                        <span>4.5</span>
+                    </div>
+                    <a class="reviews" href="#">10 отзывов</a>
+                </div>
+                <p class="product-item-name font20 font-m12 medium">Intermediate accumelator sleeve</p>
+            </div>
+            <div class="product-item-prices">
+                <div class="product-item-no-price flex font14 font-m12">
+                    <p>ЦЕНА</p>
+                    <a href="#">по запросу</a>
+                </div>
+                <div class="product-item-buttons flex-align-center cg-20">
+                    <button class="cart-btn cg-10">
+                        <img src="img/3-banner-5-cart.png" alt="Cart">
+                        <span class="font-m12 medium white">В корзину</span>
+                    </button>
+                    <a href="#"><img src="img/5-product-list-6-heart.png" alt="Favorite"></a>
+                    <a class="hide" href="#"><img src="img/5-product-list-7-rating.png" alt="Rating"></a>
+                </div>
+            </div>
+        </li>
+        <li class="product-item flex-sb">
+            <div class="product-item-description">
+                <img src="img/5-product-list-1-product.png" alt="">
+                <div class="review font14 font-m10 flex cg-10">
+                    <div class="rating flex-align-center medium">
+                        <img src="img/5-product-list-5-star.png" alt="">
+                        <span>4.5</span>
+                    </div>
+                    <a class="reviews" href="#">10 отзывов</a>
+                </div>
+                <p class="product-item-name font20 font-m12 medium">Intermediate accumelator sleeve</p>
+            </div>
+            <div class="product-item-prices">
+                <div class="product-item-no-price flex font14 font-m12">
+                    <p>ЦЕНА</p>
+                    <a href="#">по запросу</a>
+                </div>
+                <div class="product-item-buttons flex-align-center cg-20">
+                    <button class="cart-btn cg-10">
+                        <img src="img/3-banner-5-cart.png" alt="Cart">
+                        <span class="font-m12 medium white">В корзину</span>
+                    </button>
+                    <a href="#"><img src="img/5-product-list-6-heart.png" alt="Favorite"></a>
+                    <a class="hide" href="#"><img src="img/5-product-list-7-rating.png" alt="Rating"></a>
+                </div>
+            </div>
+        </li>
+        <li class="product-item flex-sb relative">
+            <div class="product-item-discount flex-center absolute font12 medium white">
+                <span>-40%</span>
+            </div>
+            <div class="product-item-description">
+                <img src="img/5-product-list-2-product.png" alt="">
+                <div class="review font14 font-m10 flex cg-10">
+                    <div class="rating flex-align-center medium">
+                        <img src="img/5-product-list-5-star.png" alt="">
+                        <span>4.5</span>
+                    </div>
+                    <a class="reviews" href="#">10 отзывов</a>
+                </div>
+                <p class="product-item-name font20 font-m12 medium">Комплект фрикционных дисков</p>
+            </div>
+            <div class="product-item-prices">
+                <div class="product-item-price flex">
+                    <p class="bold">4 430₽</p>
+                    <span>5 430₽</span>
+                </div>
+                <div class="product-item-buttons flex-align-center cg-20">
+                    <button class="cart-btn cg-10">
+                        <img src="img/3-banner-5-cart.png" alt="Cart">
+                        <span class="font-m12 medium white">В корзину</span>
+                    </button>
+                    <a href="#"><img src="img/5-product-list-6-heart.png" alt="Favorite"></a>
+                    <a class="hide" href="#"><img src="img/5-product-list-7-rating.png" alt="Rating"></a>
+                </div>
+            </div>
+        </li>
+        <li class="product-item flex-sb">
+            <div class="product-item-description">
+                <img src="img/5-product-list-3-product.png" alt="">
+                <div class="review font14 font-m10 flex cg-10">
+                    <div class="rating flex-align-center medium">
+                        <img src="img/5-product-list-5-star.png" alt="">
+                        <span>4.5</span>
+                    </div>
+                    <a class="reviews" href="#">10 отзывов</a>
+                </div>
+                <p class="product-item-name font20 font-m12 medium">Intermediate accumelator sleeve</p>
+            </div>
+            <div class="product-item-prices">
+                <div class="product-item-no-price flex font14 font-m12">
+                    <p>ЦЕНА</p>
+                    <a href="#">по запросу</a>
+                </div>
+                <div class="product-item-buttons flex-align-center cg-20">
+                    <button class="cart-btn cg-10">
+                        <img src="img/3-banner-5-cart.png" alt="Cart">
+                        <span class="font-m12 medium white">В корзину</span>
+                    </button>
+                    <a href="#"><img src="img/5-product-list-6-heart.png" alt="Favorite"></a>
+                    <a class="hide" href="#"><img src="img/5-product-list-7-rating.png" alt="Rating"></a>
+                </div>
+            </div>
+        </li>
+        <li class="product-item flex-sb">
+            <div class="product-item-description">
+                <img src="img/5-product-list-4-product.png" alt="">
+                <div class="review font14 font-m10 flex cg-10">
+                    <div class="rating flex-align-center medium">
+                        <img src="img/5-product-list-5-star.png" alt="">
+                        <span>4.5</span>
+                    </div>
+                    <a class="reviews" href="#">10 отзывов</a>
+                </div>
+                <p class="product-item-name font20 font-m12 medium">Intermediate accumelator sleeve</p>
+            </div>
+            <div class="product-item-prices">
+                <div class="product-item-no-price flex font14 font-m12">
+                    <p>ЦЕНА</p>
+                    <a href="#">по запросу</a>
+                </div>
+                <div class="product-item-buttons flex-align-center cg-20">
+                    <button class="cart-btn cg-10">
+                        <img src="img/3-banner-5-cart.png" alt="Cart">
+                        <span class="font-m12 medium white">В корзину</span>
+                    </button>
+                    <a href="#"><img src="img/5-product-list-6-heart.png" alt="Favorite"></a>
+                    <a class="hide" href="#"><img src="img/5-product-list-7-rating.png" alt="Rating"></a>
+                </div>
+            </div>
+        </li>
+    </ul>
+    <button class="font-m12 load-more-btn medium">Показать еще</button>
+</section>
+
+<section class="news-timeline">
+    <h3 class="news-heading font-m16 medium">НОВОСТИ</h3>
+    <div class="timeline hide"></div>
+    <div class="timeline-points mx-auto flex-sb">
+        <div class="news-content">
+            <div class="timeline-point">
+                <div class="point-base relative hide">
+                    <div class="point absolute"></div>
+                </div>
+                <div class="timeline-date font-m10 medium white">3 ноября</div>
+            </div>
+            <div class="news">
+                <a href="#">Изменения на сайте</a>
+                <p>Недавно на сайте мы ввели
+                    очередную порцию изменений,
+                    которые, как нам кажется, должны
+                    улучшить функциональность сайта
+                    и сделать его более удобным для
+                    пользователей. Реакция посетителей
+                    не заставила себя долго ждать...</p>
+            </div>
+        </div>
+        <div class="news-content">
+            <div class="timeline-point">
+                <div class="point-base relative hide">
+                    <div class="point absolute"></div>
+                </div>
+                <div class="timeline-date font-m10 medium white">2 ноября</div>
+            </div>
+            <div class="news">
+                <a href="#">Вышла новая версия для мобильных приложений</a>
+                <p>Что нового в 2.0: <br>
+                    — добавлена история поиска; <br>
+                    — добавлена синхронизация с сервером; <br>
+                    — испрвление ошибок.</p>
+            </div>
+        </div>
+        <div class="news-content">
+            <div class="timeline-point">
+                <div class="point-base relative hide">
+                    <div class="point absolute"></div>
+                </div>
+                <div class="timeline-date font-m10 medium white">1 ноября</div>
+            </div>
+            <div class="news">
+                <a href="#">Очередная порция обновлений для мобильных приложений</a>
+                <p>Что нового добавлено: <br>
+                    — поддержка пуш-уведомлений; <br>
+                    — разделы для покупателей; <br>
+                    — просмотр покупателя в заказах; <br>
+                    — возможность поиска; <br>
+                    — исправление ошибок.</p>
+            </div>
+        </div>
+        <div class="news-content">
+            <div class="timeline-point">
+                <div class="point-base relative hide">
+                    <div class="point absolute"></div>
+                </div>
+                <div class="timeline-date font-m10 medium white">31 октября</div>
+            </div>
+            <div class="news">
+                <a href="#">Интерфейс заказов для покупателей стал более функциональным</a>
+                <p>Он позволяет выводить все
+                    формируемые системой
+                    уведомления(e-mail, смс, web) в
+                    едином окне с системой удобной
+                    фильтрации поиска.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <div class="footer-content mx-auto flex-sb font14 font-m12 medium white relative">
+        <div class="footer-menu">
+            <h4 class="font18 font-m14">КАТАЛОГ</h4>
+            <ul>
+                <li>Каталог запчастей</li>
+                <li>Масла</li>
+                <li>Фильтра</li>
+                <li>Радиаторы</li>
+                <li>Sonnax</li>
+                <li>Manual</li>
+                <li>Новинки</li>
+                <li>Акции</li>
+            </ul>
+        </div>
+        <div class="footer-menu">
+            <h4 class="font18 font-m14">РУБРИКАТОР</h4>
+            <ul>
+                <li>Доставка</li>
+                <li>Оплата</li>
+                <li>Гарантия</li>
+                <li>Новости</li>
+                <li>Журнал</li>
+                <li>О магазине</li>
+                <li>Контактная информация</li>
+            </ul>
+        </div>
+        <div class="footer-menu">
+            <h4 class="font18 font-m14">ИНФОРМАЦИЯ</h4>
+            <ul>
+                <li>Пользовательское соглашение
+                    об использовании персональных данных
+                </li>
+                <li>Политика конфиденциальности</li>
+                <li>Соглашение на рассылку
+                    рекламных материалов
+                </li>
+                <li>Политика возвратов</li>
+            </ul>
+            <div class="bank-cards">
+                <p>Мы принимаем</p>
+                <img src="img/6-footer-1-cards.png" alt="Cards">
+            </div>
+        </div>
+        <div class="contact-links">
+            <div class="footer-contacts flex-sb">
+                <div class="phone">
+                    <h4>КОНТАКТЫ</h4>
+                    <p>+7 383 291 92 86</p>
+                    <p>info@avt-zap.ru</p>
+                </div>
+                <div class="address">
+                    <h4>АДРЕС</h4>
+                    <p>г. Новосибирск,
+                        <br>ул. Планировочная, 5, офис 105</p>
+                </div>
+            </div>
+            <div class="contact-form flex cg-20">
+                <span>Мы онлайн, воспользуйтесь</span>
+                <a href="">Форма обратной связи</a>
+            </div>
+            <span>Подпишитесь на нашу расслыку и
+                <br>вы первыми узнаете о скидках и акциях</span>
+            <div class="subscribe flex">
+                <input type="email" placeholder="Введите ваш email">
+                <button class="white">Подписаться</button>
+            </div>
+            <div class="socials flex">
+                <a href="#"><img src="img/6-footer-2-social.png" alt="Facebook"></a>
+                <a href="#"><img src="img/6-footer-3-social.png" alt="Telegram"></a>
+                <a href="#"><img src="img/6-footer-4-social.png" alt="Twitter"></a>
+                <a href="#"><img src="img/6-footer-5-social.png" alt="Google+"></a>
+            </div>
+        </div>
+        <p class="copyright absolute">2017 © ООО «АВТ-ЗАП» - запчасти для акпп</p>
+    </div>
+</footer>
+
+</body>
+</html>
