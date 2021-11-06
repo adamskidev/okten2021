@@ -10,10 +10,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="main.css">
     <link rel="stylesheet" href="media.css">
-    <title>Document</title>
+    <title>Интернет-магазин запчастей для АКПП</title>
 </head>
 <body>
-
 
 <header>
     <div class="header-top flex-align-center">
@@ -21,16 +20,16 @@
             <div class="nav-left flex-align-center cg-30">
                 <div class="location flex-align-center">
                     <img class="location-icon" src="img/1-header-top-1-placeholder.png" alt="Location">
-                    <p>Ваш город: <a href="#">Москва</a></p>
+                    <p>Ваш город: <a href="#select-city">Москва</a></p>
                 </div>
-                <div class="location-modal absolute hide">
+                <div class="city-modal absolute" id="select-city">
                     <div class="modal-heading flex-sb">
                         <span class="font20 bold">Выберите свой город</span>
-                        <img class="h100" src="img/1-header-top-2-close.png" alt="Close">
+                        <a href="#"><img class="close-icon" src="img/1-header-top-2-close.png" alt="Close"></a>
                     </div>
                     <input type="text" placeholder="Ваш город">
                     <ul class="font14 medium">
-                        <li class="selected">Москва</li>
+                        <li>Москва</li>
                         <li>Санкт-Петербург</li>
                         <li>Краснодар</li>
                         <li>Екатеринбург</li>
@@ -104,9 +103,26 @@
                     <span>Напишите нам в WhatsApp</span>
                 </button>
 
-                <div class="header-phone medium">
+                <div class="header-phone medium relative">
                     <p class="font20 font-m14 m-0">+7 383 291 92 86</p>
-                    <a class="font12 font-m10" href="#">форма обратной связи</a>
+                    <a class="font12 font-m10" href="#call-form">форма обратной связи</a>
+                    <div class="phone-modal absolute" id="call-form">
+                        <div class="modal-heading flex-sb">
+                            <span class="font20 bold">Заказать звонок</span>
+                            <a href="#"><img class="close-icon" src="img/1-header-top-2-close.png" alt="Close"></a>
+                        </div>
+                        <fieldset>
+                            <legend class="font14">Ваше имя</legend>
+                            <input type="text">
+                        </fieldset>
+                        <fieldset class="phone-input flex-center">
+                            <legend class="font14">Номер телефона</legend>
+                            <img class="region" src="img/2-header-main-8-region.png" alt="">
+                            <span class="font14">+7</span>
+                            <input type="number" placeholder="(999) 999-99-99">
+                        </fieldset>
+                        <button class="white">Заказать звонок</button>
+                    </div>
                 </div>
             </div>
         </div>
@@ -118,12 +134,28 @@
                     <span class="font18 bold white hide">Каталог</span>
                 </button>
 
-                <div class="search-form flex">
-                    <input class="input-search" type="search" placeholder="Поиск по наименованию или артикулу">
-                    <button class="search-btn">
-                        <span class="font14 medium white hide">Найти</span>
-                        <img src="img/2-header-main-7-search.png" alt="">
-                    </button>
+                <div class="search-form relative">
+                    <div class="flex">
+                        <input class="input-search" type="search" placeholder="Поиск по наименованию или артикулу">
+                        <button class="search-btn">
+                            <span class="font14 medium white hide">Найти</span>
+                            <img src="img/2-header-main-7-search.png" alt="">
+                        </button>
+                    </div>
+
+                    <div class="search-modal">
+                        <span class="font14 font-m12">Найденные трансмиссии:</span>
+                        <ul class="font-m12">
+                            <li>6eT40</li>
+                            <li>6eT40</li>
+                            <li>6eT40</li>
+                        </ul>
+                        <span class="font14 font-m12">Найденные товары:</span>
+                        <ul class="font-m12">
+                            <li>Насос - Артикул / 43233</li>
+                            <li>Соленоид - Артикул / 4493934-22</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
 
@@ -146,34 +178,87 @@
 </header>
 
 <section class="promo mx-auto flex-sb">
-    <div class="banner flex-center cg-30 relative">
-        <button class="slider-btn-left absolute hide">
+    <div class="banner relative">
+        <div class="slider-btn-left-fixed flex-center absolute hide">
             <img src="img/3-banner-3-btn-prev.png" alt="Previous">
-        </button>
-
-        <div class="banner-content">
-            <p class="banner-product-name font36 font-m16 medium">Сцепление в сборе</p>
-            <a class="banner-product-brand font20 font-m16" href="#">0AMCLUTCH</a>
-            <div class="banner-product-price flex">
-                <p>14 499,99 ₽</p>
-                <span class="font22 font-m14">18 550,99 ₽</span>
-            </div>
-            <button class="cart-btn cg-10">
-                <img src="img/3-banner-5-cart.png" alt="Cart">
-                <span class="medium white font-m12">В корзину</span>
-            </button>
         </div>
+        <div class="slider flex relative">
+            <div id="slide1" class="flex-center cg-30 relative">
+                <a href="#slide3" class="slider-btn-left flex-center absolute"></a>
+                <div class="banner-content">
+                    <p class="banner-product-name font36 font-m16 medium">Сцепление в сборе</p>
+                    <a class="banner-product-brand font20 font-m16" href="#">0AMCLUTCH</a>
+                    <div class="banner-product-price flex">
+                        <p>14 499,99 ₽</p>
+                        <span class="font22 font-m14">18 550,99 ₽</span>
+                    </div>
+                    <button class="cart-btn cg-10">
+                        <img src="img/3-banner-5-cart.png" alt="Cart">
+                        <span class="medium white font-m12">В корзину</span>
+                    </button>
+                </div>
+                <img src="img/3-banner-2-product.png" alt="">
+                <a href="#slide2" class="slider-btn-right flex-center absolute"></a>
+                <div class="slider-dots flex cg-20 absolute">
+                    <a href="#slide1" class="dot-active"></a>
+                    <a href="#slide2" class="dot"></a>
+                    <a href="#slide3" class="dot"></a>
+                </div>
+            </div>
 
-        <img src="img/3-banner-2-product.png" alt="">
+            <div id="slide2" class="flex-center cg-30 relative">
+                <a href="#slide1" class="slider-btn-left flex-center absolute"></a>
+                <div class="banner-content">
+                    <p class="banner-product-name font36 font-m16 medium">Комплект дисков</p>
+                    <a class="banner-product-brand font20 font-m16" href="#">0AMCLUTCH</a>
+                    <div class="banner-product-price flex">
+                        <p>4 430 ₽</p>
+                        <span class="font22 font-m14">5 430 ₽</span>
+                    </div>
+                    <button class="cart-btn cg-10">
+                        <img src="img/3-banner-5-cart.png" alt="Cart">
+                        <span class="medium white font-m12">В корзину</span>
+                    </button>
+                </div>
+                <img src="img/5-product-list-2-product.png" alt="">
+                <a href="#slide3" class="slider-btn-right flex-center absolute"></a>
+                <div class="slider-dots flex cg-20 absolute">
+                    <a href="#slide1" class="dot"></a>
+                    <a href="#slide2" class="dot-active"></a>
+                    <a href="#slide3" class="dot"></a>
+                </div>
+            </div>
 
-        <button class="slider-btn-right absolute hide">
+            <div id="slide3" class="flex-center cg-30 relative">
+                <a href="#slide2" class="slider-btn-left flex-center absolute"></a>
+                <div class="banner-content">
+                    <p class="banner-product-name font36 font-m16 medium">Обгонная муфта</p>
+                    <a class="banner-product-brand font20 font-m16" href="#">0AMCLUTCH</a>
+                    <div class="banner-product-price flex">
+                        <p>8 199,99 ₽</p>
+                        <span class="font22 font-m14">10 150,99 ₽</span>
+                    </div>
+                    <button class="cart-btn cg-10">
+                        <img src="img/3-banner-5-cart.png" alt="Cart">
+                        <span class="medium white font-m12">В корзину</span>
+                    </button>
+                </div>
+                <img src="img/5-product-list-4-product.png" alt="">
+                <a href="#slide1" class="slider-btn-right flex-center absolute"></a>
+                <div class="slider-dots flex cg-20 absolute">
+                    <a href="#slide1" class="dot"></a>
+                    <a href="#slide2" class="dot"></a>
+                    <a href="#slide3" class="dot-active"></a>
+                </div>
+            </div>
+        </div>
+        <div class="slider-btn-right-fixed flex-center absolute hide">
             <img src="img/3-banner-4-btn-next.png" alt="Next">
-        </button>
-
+        </div>
         <div class="slider-dots flex cg-20 absolute">
-            <div class="dot-black"></div>
-            <div class="dot-white"></div>
-            <div class="dot-white"></div>
+            <a href="#slide1" class="dot-fixed"></a>
+            <a href="#slide2" class="dot-fixed"></a>
+            <a href="#slide3" class="dot-fixed"></a>
         </div>
     </div>
 
@@ -221,7 +306,7 @@
 </section>
 
 <section class="product-types mx-auto flex-sb relative">
-    <button class="slider-btn-left absolute hide">
+    <button class="types-slider-btn-left absolute hide">
         <img src="img/3-banner-3-btn-prev.png" alt="Previous">
     </button>
 
@@ -252,7 +337,7 @@
         <img class="h100" src="img/4-type-3-product.png" alt="">
     </div>
 
-    <button class="slider-btn-right absolute hide">
+    <button class="types-slider-btn-right absolute hide">
         <img src="img/3-banner-4-btn-next.png" alt="Next">
     </button>
 </section>
@@ -636,8 +721,8 @@
             <div class="footer-contacts flex-sb">
                 <div class="phone">
                     <h4>КОНТАКТЫ</h4>
-                    <p>+7 383 291 92 86</p>
-                    <p>info@avt-zap.ru</p>
+                    <a href="tel:+7 383 291 92 86">+7 383 291 92 86</a>
+                    <a href="mailto:info@avt-zap.ru">info@avt-zap.ru</a>
                 </div>
                 <div class="address">
                     <h4>АДРЕС</h4>
@@ -647,7 +732,7 @@
             </div>
             <div class="contact-form flex cg-20">
                 <span>Мы онлайн, воспользуйтесь</span>
-                <a href="">Форма обратной связи</a>
+                <a href="#call-form">Форма обратной связи</a>
             </div>
             <span>Подпишитесь на нашу расслыку и
                 <br>вы первыми узнаете о скидках и акциях</span>

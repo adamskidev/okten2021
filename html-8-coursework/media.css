@@ -31,6 +31,10 @@
         padding: 0 15px;
     }
 
+    .city-modal {
+        left: 0;
+    }
+
     .nav-right-media {
         display: block;
     }
@@ -86,6 +90,11 @@
         display: block;
     }
 
+    .search-modal {
+        width: 100%;
+        top: 45px;
+    }
+
     .promo {
         padding: 15px 15px 0;
         flex-direction: column;
@@ -96,8 +105,11 @@
     .banner {
         height: 195px;
         width: 100%;
-        padding: 15px;
         border-radius: 10px;
+    }
+
+    #slide1, #slide2, #slide3 {
+        padding: 0 15px;
     }
 
     .banner a {
@@ -125,15 +137,14 @@
 
     .slider-dots {
         left: 50%;
-        margin-left: -33px;
-        bottom: 10px;
-        column-gap: 15px;
+        margin-left: -30px;
+        bottom: 0;
+        column-gap: 12px;
     }
 
-    .dot-black, .dot-white {
+    .dot, .dot-active, .dot-fixed {
         height: 12px;
         width: 12px;
-        border-radius: 50%;
     }
 
     .cart-btn img {
