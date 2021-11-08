@@ -16,26 +16,28 @@
 
 <header>
     <div class="header-top flex-align-center">
-        <nav class="mx-auto flex-sb font14 font-m12 white relative">
+        <nav class="mx-auto flex-sb font14 font-m12 white">
             <div class="nav-left flex-align-center cg-30">
                 <div class="location flex-align-center">
                     <img class="location-icon" src="img/1-header-top-1-placeholder.png" alt="Location">
                     <p>Ваш город: <a href="#select-city">Москва</a></p>
                 </div>
-                <div class="city-modal absolute" id="select-city">
-                    <div class="modal-heading flex-sb">
-                        <span class="font20 bold">Выберите свой город</span>
-                        <a href="#"><img class="close-icon" src="img/1-header-top-2-close.png" alt="Close"></a>
+                <div class="city-modal relative" id="select-city">
+                    <div class="city-modal-box absolute">
+                        <div class="modal-heading flex-sb">
+                            <span class="font20 bold">Выберите свой город</span>
+                            <a href="#!"><img class="close-icon" src="img/1-header-top-2-close.png" alt="Close"></a>
+                        </div>
+                        <input type="text" placeholder="Ваш город">
+                        <ul class="font14 medium">
+                            <li>Москва</li>
+                            <li>Санкт-Петербург</li>
+                            <li>Краснодар</li>
+                            <li>Екатеринбург</li>
+                            <li>Ростов-на-Дону</li>
+                            <li>Самара</li>
+                        </ul>
                     </div>
-                    <input type="text" placeholder="Ваш город">
-                    <ul class="font14 medium">
-                        <li>Москва</li>
-                        <li>Санкт-Петербург</li>
-                        <li>Краснодар</li>
-                        <li>Екатеринбург</li>
-                        <li>Ростов-на-Дону</li>
-                        <li>Самара</li>
-                    </ul>
                 </div>
                 <select name="information" id="information" class="info-dropdown hide">
                     <option value="">Информация</option>
@@ -103,25 +105,27 @@
                     <span>Напишите нам в WhatsApp</span>
                 </button>
 
-                <div class="header-phone medium relative">
+                <div class="header-phone medium">
                     <p class="font20 font-m14 m-0">+7 383 291 92 86</p>
                     <a class="font12 font-m10" href="#call-form">форма обратной связи</a>
-                    <div class="phone-modal absolute" id="call-form">
-                        <div class="modal-heading flex-sb">
-                            <span class="font20 bold">Заказать звонок</span>
-                            <a href="#"><img class="close-icon" src="img/1-header-top-2-close.png" alt="Close"></a>
+                    <div class="phone-modal" id="call-form">
+                        <div class="phone-modal-box absolute">
+                            <div class="modal-heading flex-sb">
+                                <span class="font20 bold">Заказать звонок</span>
+                                <a href="#!"><img class="close-icon" src="img/1-header-top-2-close.png" alt="Close"></a>
+                            </div>
+                            <fieldset>
+                                <legend class="font14">Ваше имя</legend>
+                                <input type="text">
+                            </fieldset>
+                            <fieldset class="phone-input flex-center">
+                                <legend class="font14">Номер телефона</legend>
+                                <img class="region" src="img/2-header-main-8-region.png" alt="">
+                                <span class="font14">+7</span>
+                                <input type="number" placeholder="(999) 999-99-99">
+                            </fieldset>
+                            <button class="white">Заказать звонок</button>
                         </div>
-                        <fieldset>
-                            <legend class="font14">Ваше имя</legend>
-                            <input type="text">
-                        </fieldset>
-                        <fieldset class="phone-input flex-center">
-                            <legend class="font14">Номер телефона</legend>
-                            <img class="region" src="img/2-header-main-8-region.png" alt="">
-                            <span class="font14">+7</span>
-                            <input type="number" placeholder="(999) 999-99-99">
-                        </fieldset>
-                        <button class="white">Заказать звонок</button>
                     </div>
                 </div>
             </div>

@@ -152,21 +152,29 @@ nav {
 }
 
 .city-modal, .phone-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 9;
+    display: none;
+}
+
+.city-modal-box, .phone-modal-box {
     position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     width: 320px;
     background-color: white;
     padding: 20px;
     border-radius: 10px;
     box-sizing: border-box;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-    z-index: 2;
+    z-index: 10;
     color: #0F2438;
-    display: none;
-}
-
-.city-modal {
-    left: 100px;
-    top: 0;
 }
 
 .city-modal:target {
@@ -253,7 +261,7 @@ nav select {
 }
 
 .phone-modal {
-    right: 0;
+    right: calc((100vw - 1354px)/2);
     text-align: left;
 }
 
