@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+<script>
+
+    // - Нам дано масив друзів let friends = ["Ivan", "Slavik", "Grisha", "Lera", "Ira"]; Потрібно зробити перевірку якщо
+    //   кількість елементів у масиві більше або дорівнює 3, то виводиться повідомлення про те, що це великий масив, в якому  3 і більше елементи.
+    //   Інакше слід вивести на екран повідомлення про те, що це маленький масив, в якому менше 3-х елементів.
+
+        let friends = ["Ivan", "Slavik", "Grisha", "Lera", "Ira"];
+
+        if (friends.length < 3) {
+            console.log('це маленький масив, в якому менше 3-х елементів');
+        } else {
+            console.log('це великий масив, в якому 3 і більше елементи');
+        }
+
+
+    // - Маємо 3 числа і між ним  нам потрібно знайти те що посередині.
+    //   Знайти, яке з них є середнім (більше одного, але менше за інше). Перевірити, чи знаходиться перше число між двома іншими.
+
+        let num1 = +prompt('Enter first number');
+        let num2 = +prompt('Enter second number');
+        let num3 = +prompt('Enter third number');
+
+        if (num1 < num2 && num1 < num3) {
+            if (num2 < num3) {
+                console.log(`число ${num2} є середнім числом`);
+            } else {
+                console.log(`число ${num3} є середнім числом`);
+            }
+        } else if (num2 < num1 && num2 < num3) {
+            if (num1 < num3) {
+                console.log(`число ${num1} є середнім числом`);
+            } else {
+                console.log(`число ${num3} є середнім числом`);
+            }
+        } else if (num3 < num1 && num3 < num2) {
+            if (num1 < num2) {
+                console.log(`число ${num1} є середнім числом`);
+            } else {
+                console.log(`число ${num2} є середнім числом`);
+            }
+        }
+
+
+    // - Перепишіть конструкцію if з використанням умовного оператора '?':
+    // let result;
+    // if (a + b < 4) {
+    //     result = 'Мало';
+    // } else {
+    //     result = 'Багато';
+    // }
+
+        let result = (a + b < 4) ? 'Мало' : 'Багато';
+
+
+    // - Маємо будь яке число від -100 , 0 , +100 потрібно перевірити яким є число: позитивним, негативним або нулем
+    //   напишіть це тернарним оператором
+
+        let num = +prompt('Введіть будь яке число від -100 до +100');
+
+        let numResult = (num === 0) ? 'ви ввели нуль' : (num < 0) ? 'ви ввели негативне число' : 'ви ввели позитивне число';
+        console.log(numResult);
+
+</script>
+
+</body>
+</html>
