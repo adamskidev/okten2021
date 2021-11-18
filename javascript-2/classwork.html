@@ -29,11 +29,11 @@
 
         let flat = +prompt('Вкажи номер квартири');
 
-        if (flat > 0 && flat < 21) {
+        if (flat > 0 && flat <= 20) {
             console.log(`Квартира № ${flat} знаходиться у першому під'їзді`);
-        } else if (flat < 49) {
+        } else if (flat > 20 && flat <= 48) {
             console.log(`Квартира № ${flat} знаходиться у другому під'їзді`);
-        } else if (flat < 91) {
+        } else if (flat > 48 && flat <= 90) {
             console.log(`Квартира № ${flat} знаходиться у третьому під'їзді`);
         } else {
             console.log(`У цьому будинку немає квартири № ${flat}`);
@@ -44,7 +44,7 @@
 
         let number = +prompt('Enter any number');
 
-        let result = (number === 10) ? 'ВІРНО' : 'НЕВІРНО';
+        let result = number === 10 ? 'ВІРНО' : 'НЕВІРНО';
         console.log(result);
 
 

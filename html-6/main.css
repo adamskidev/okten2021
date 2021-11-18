@@ -23,6 +23,10 @@ a {
     color: #fff;
 }
 
+button {
+    cursor: pointer;
+}
+
 header {
     padding: 50px 165px;
     box-sizing: border-box;
@@ -164,7 +168,6 @@ header {
     height: 50px;
     width: 160px;
     margin-left: 20px;
-    cursor: pointer;
 }
 
 .burger-menu {
@@ -223,7 +226,6 @@ header {
 .menu-btn {
     height: 50px;
     width: 140px;
-    cursor: pointer;
 }
 
 .header-blocks {
