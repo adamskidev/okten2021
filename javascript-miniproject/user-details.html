@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>user-details</title>
+
+    <!--    Стилизация проекта - -->
+    <!--    user-details.html - блок с информацией про user вверху страницы. Кнопка ниже, на 90% ширины страницы, по центру.-->
+    <!--    блоки с краткой информацией про post - в ряд по 5 объектов.-->
+    <style>
+        .user-div {
+            max-width: 520px;
+            margin: 50px auto;
+            font-size: 22px;
+        }
+        .posts-container {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        #posts-btn {
+            width: 90%;
+            font-size: 18px;
+        }
+        .posts-div {
+            width: 90%;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .post-div {
+            width: 20%;
+            padding: 20px;
+            box-sizing: border-box;
+            box-shadow: silver 0px 0px 3px;
+        }
+    </style>
+</head>
+<body>
+<div class="user-div"></div>
+<div class="posts-container">
+    <button id="posts-btn">post of current user</button>
+</div>
+<script src="user-details.js"></script>
+</body>
+</html>
